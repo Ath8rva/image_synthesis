@@ -11,14 +11,23 @@ Original file is located at
 [Hugging Face]
 """
 
-!nvidia-smi -L
+import subprocess
 
-"""Install
-
-
-"""
-
-!pip install --upgrade diffusers==0.12.1 transformers==4.26.0 accelerate==0.16.0 scipy==1.* ftfy==6.*
+try:
+    packages = [
+        "diffusers==0.12.1",
+        "transformers==4.26.0",
+        "accelerate==0.16.0",
+        "scipy==1.*",
+        "ftfy==6.*"
+    ]
+    for package in packages:
+        subprocess.check_call(["pip", "install", "--upgrade", package])
+    print("Package installation completed successfully.")
+except subprocess.CalledProcessError as e:
+    print(f"Failed to install packages: {e}")
+except Exception as e:
+    print(f"An error occurred: {e}")
 
 """Stable Diffusion `access_token`"""
 
@@ -67,4 +76,3 @@ def app():
 
 if __name__ == "__main__":
     app()
-
