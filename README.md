@@ -1,17 +1,17 @@
-Image Synthesis
+##Image Synthesis
 
 This repository contains a Python script for generating images using the Stable Diffusion model.
-🚀 Features
+#🚀 Features
 
     Generate high-quality images based on textual prompts.
     Powered by Stable Diffusion, a cutting-edge generative AI model.
 
-🛠 Requirements
+#🛠 Requirements
 
     Python 3.x
     Stable Diffusion model files and their dependencies
 
-📦 Installation
+#📦 Installation
 
     Clone the repository:
 
@@ -27,7 +27,7 @@ Install the required dependencies:
 
         Note: Ensure the requirements.txt file lists all necessary libraries.
 
-🚀 Usage
+#🚀 Usage
 
     Prepare your prompt: Decide on the textual description for the image you wish to generate.
 
@@ -39,12 +39,10 @@ Install the required dependencies:
 
     Output: The generated image will be saved in the output directory specified in the script.
 
-🤝 Contributing
+#🤝 Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements or new features.
-📜 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
 🙏 Acknowledgements
 
     Thanks to Stable Diffusion for providing the foundational model.
